@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Představení HTML značek</title>
+</head>
+<body>
+    <h1>HTML Značky a jejich použití</h1>
+
+    <!-- Značka <dfn> - Definice termínu -->
+    <p><dfn>HTML</dfn>  -----"dfn" píší se do ní definice termínu, je psána kurzívou</p>
+
+
+    <!-- Značka <dialog> - Dialogové okno -->
+    
+   
+    <dialog open>
+        <p>Toto je dialogové okno. které vyžaduje interakci uživatele, než může pokračovat na stránce.</p>
+        <button id="closeDialogButton">Zavřít</button>
+
+    </dialog>
+
+    <script>
+        const closeDialogButton = document.getElementById('closeDialogButton');
+        const dialog = document.querySelector('dialog');
+
+        closeDialogButton.addEventListener('click', () => {
+            dialog.close();
+        });
+    </script>
+    
+
+    <!-- Značka <div> - Blokový kontejner -->
+    <div style="width: 500px; height: 250px; background-color: lightblue;">
+        Toto je obsah div elementu,
+        
+    </div>
+    <p>Div vytvaří blokové kontejnery, které mohou obsahovat text, obrazky a dals</p>
+
+    <!-- Značka <em> - Zvýrazněný text -->
+    <p><em>Toto je zvýrazněný text.</em></p>
+    <p> em slouží k zvýraznění textu nebo slov ve značce</p>
+    
+
+    <!-- Značka <embed> - Vložený obsah -->
+    <embed src="ssps.png" width="600" height="600" type="video/mp4">
+    <p>embed slouží k vložení obrázku či videa</p>
+    
+    <!-- Značka <section> - Sekce dokumentu -->
+    <section>
+        <h2>Toto je sekce</h2>
+        <p>Obsah sekce...</p>
+    </section>
+    <p>ukolem section je organizovat obsah stránky do logických částí nebo sekcí</p>
+
+    <!-- Značka <head> - Hlavička dokumentu -->
+    <h1>HEAD</h1>
+        <p>definice hlavičky dokumentu, metadata a informace o dokumentu, není viditelná na strance</p>
+</body>
+</html>
